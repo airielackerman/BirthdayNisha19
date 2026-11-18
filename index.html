@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gardenia Wrapped ♡</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <header class="topbar">
+    <a class="wordmark" href="#" id="brand-home">
+      a little garden <span>♡</span>
+    </a>
+    <span class="topbar-note">a birthday keepsake · 2026</span>
+  </header>
+
+  <main class="experience">
+
+    <!-- 00: PASSWORD -->
+    <section class="screen gate-screen is-active" data-screen="gate">
+      <div class="paper-card gate-card">
+        <div class="tiny-flower">✿</div>
+        <p class="eyebrow">A LITTLE SOMETHING IS WAITING</p>
+
+        <h1>Before you enter,<br><em>one little key.</em></h1>
+
+        <p class="lead">
+          Only you know the date that opens this little garden.
+        </p>
+
+        <form id="date-form" class="date-form">
+          <label for="birthday-date">Your special date</label>
+          <input id="birthday-date" type="date" required>
+
+          <p class="form-message" id="date-message"></p>
+
+          <button class="primary-button" type="submit">
+            Unlock the garden ↗
+          </button>
+        </form>
+
+        <div class="gate-footnote">
+          a tiny birthday surprise, made just for you ♡
+        </div>
+      </div>
+    </section>
+
+
+    <!-- 01: THE SONG -->
+    <!-- SONG INTRO -->
+    <section class="screen song-screen" data-screen="song" hidden>
+      <div class="screen-inner narrow">
+
+        <p class="eyebrow">A little melody for you</p>
+
+        <div class="song-panel">
+
+          <div class="album-art">
+            <img src="assets/album-cover.jpg" alt="The Art of Chasing You album artwork">
+          </div>
+
+          <p class="song-kicker">THE SOUNDTRACK OF THIS LITTLE STORY</p>
+
+          <h1>The Art of Chasing You</h1>
+
+          <p class="song-artist">
+            Magnolia Celebration
+            <span>feat. Ade Paloh</span>
+          </p>
+
+          <div class="song-divider">✿</div>
+
+          <p class="song-message">
+            Some melodies remind us of people.
+            This one reminds me of you.
+          </p>
+
+          <div class="audio-player">
+            <audio id="gardenia-audio" controls preload="auto">
+              <source src="assets/gardenia-song.mp3.mp3" type="audio/mpeg">
+              Your browser does not support audio playback.
+            </audio>
+
+            <p id="audio-status" class="audio-note">
+              Ready when you are ♡
+            </p>
+          </div>
+
+          <p class="audio-note">
+            Take your time and enjoy the song ♡
+          </p>
+
+        </div>
+
+        <button class="primary-button" type="button" data-next>
+          Continue our story →
+        </button>
+
+      </div>
+    </section>
+
+
+
+    <!-- 02: FOR GARDENIA -->
+    <section class="screen" data-screen="welcome" hidden>
+      <div class="screen-inner hero-inner">
+
+        <div class="hero-flower">✿</div>
+
+        <p class="eyebrow">A NEW LITTLE CHAPTER</p>
+
+        <h1>Happy Birthday</h1>
+        <h1>To My<em> Gardenia!!!</em></h1>
+
+        <p class="hero-copy">
+          Another year, another little collection of
+          memories, words, and wishes for my nisha.
+        </p>
+
+        <p class="hero-subcopy">
+          I made this slowly, with you in mind.
+        </p>
+
+        <div class="photo-frame welcome-frame">
+          <img src="assets/MungaMungaa.jpeg" alt="Budak Kecik" class="welcome-photo">
+          <p>my fav pic of you</p>
+        </div>
+
+        <div class="doodle-caption">
+          a little flower for you · a little daydream ♡
+        </div>
+
+      </div>
+      <div class="celebration-burst" id="celebration-burst" aria-hidden="true"></div>
+    </section>
+
+
+    <!-- 03: YOUR DAY, MY WORDS -->
+    <section class="screen" data-screen="wish" hidden>
+      <div class="screen-inner split-layout">
+
+        <!-- LEFT COLUMN: Wish Letter -->
+        <article class="letter-paper">
+          <p class="eyebrow">YOUR DAY, MY WORDS</p>
+
+          <h1>A birthday wish<br><em>for bunga.</em></h1>
+
+          <p>Sannah Helwah Nisha Farhana Binti Haikal Suresh.</p>
+
+          <p>
+            I hope this new chapter brings you gentle days,
+            unexpected happiness, and little reasons to feel
+            proud of yourself because you deserve it soooo much meow.
+          </p>
+
+          <p>
+            May the year ahead be kind to you. May you find
+            courage when things feel difficult, peace when
+            life gets loud, and joy in the ordinary moments
+            in between.
+          </p>
+
+          <p class="signature">With all my care, always ♡</p>
+        </article>
+
+        <!-- RIGHT COLUMN: Polaroid Photo -->
+        <div class="section-art">
+          <div class="flower-illustration">❀</div>
+
+          <div class="photo-frame small-frame wish-photo-frame">
+            <img src="assets/Snoopy.jpeg" alt="A special photo of Gardenia" class="wish-photo">
+            <p>today is all about you</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- 04: OUR TIME MACHINE -->
+    <section class="screen" data-screen="gallery" hidden>
+      <div class="screen-inner">
+
+        <div class="section-heading">
+          <p class="eyebrow">LITTLE WINDOWS INTO OUR WORLD</p>
+          <h1>Our <em>time machine.</em></h1>
+          <p class="lead">
+            A few little moments I wish I could press pause on.
+          </p>
+        </div>
+
+        <!-- INTERACTIVE GIFT BOX -->
+        <div class="gift-stage" id="gift-stage">
+          <button type="button" class="gift-box" id="gift-box" aria-label="Tap the gift box to open">
+            <div class="gift-lid">
+              <div class="gift-bow">
+                <span class="bow-loop left"></span>
+                <span class="bow-loop right"></span>
+                <span class="bow-knot"></span>
+              </div>
+              <div class="gift-lid-ribbon"></div>
+            </div>
+            <div class="gift-body">
+              <div class="gift-ribbon-v"></div>
+              <div class="gift-ribbon-h"></div>
+              <span class="gift-tag">for you ♡</span>
+            </div>
+          </button>
+          <p class="gift-prompt" id="gift-prompt">Tap the box to open (0 / 3)</p>
+        </div>
+
+        <!-- POLAROID GRID (Starts hidden/collapsed, pops out on 3rd tap) -->
+        <div class="memory-grid is-locked" id="memory-grid">
+
+          <button class="memory-card" data-memory="The ordinary moments that somehow became my favourites.">
+            <span class="memory-photo">
+              <img src="assets/Tuition.png" alt="A favourite memory together">
+            </span>
+            <span class="memory-caption">the little things</span>
+          </button>
+
+          <button class="memory-card" data-memory="A day out, a little adventure, and a memory worth keeping.">
+            <span class="memory-photo">
+              <img src="assets/Silly.jpg" alt="A day out together">
+            </span>
+            <span class="memory-caption">somewhere together</span>
+          </button>
+
+          <button class="memory-card" data-memory="The silly moments deserve a place in the collection, too.">
+            <span class="memory-photo">
+              <img src="assets/Sillypt2.png" alt="A silly moment together">
+            </span>
+            <span class="memory-caption">the silly ones</span>
+          </button>
+
+          <button class="memory-card" data-memory="One more moment I hope we remember with a smile.">
+            <span class="memory-photo">
+              <img src="assets/Fav.png" alt="Another favourite memory">
+            </span>
+            <span class="memory-caption">one to keep</span>
+          </button>
+
+        </div>
+
+        <p class="gallery-hint" id="gallery-hint" hidden>
+          Tap a little memory to open its note.
+        </p>
+
+      </div>
+    </section>
+
+    <!-- 05: MY HOPE -->
+    <section class="screen" data-screen="hope" hidden>
+      <div class="screen-inner hope-layout">
+
+        <div class="hope-visual">
+          <div class="photo-frame hope-photo-frame">
+            <img src="assets/Hope.png" alt="A special memory together" class="hope-photo">
+            <p>growing side by side</p>
+          </div>
+          <p class="art-caption">
+            still growing, still learning
+          </p>
+        </div>
+
+        <article class="letter-paper">
+          <p class="eyebrow">A PAGE FOR WHAT'S AHEAD</p>
+
+          <h1>My <em>hope.</em></h1>
+
+          <p>
+            I hope we keep making room for the good things:
+            honest conversations, ordinary laughter, little
+            adventures, and the quiet comfort of being understood.
+          </p>
+
+          <p>
+            I hope I keep becoming someone who listens better,
+            shows up with care, and never treats the small
+            things as if they don't matter. I hope I grow better
+            with you besides me, even when things gets hard, I hope
+            we always find our way to keep choosing us.
+          </p>
+
+          <p>
+            And I hope that, wherever life takes us, we keep
+            choosing kindness, patience, and growth. I Love You sincerely.
+          </p>
+
+          <p class="signature">
+            Here's to the chapters still unwritten. ♡
+          </p>
+        </article>
+
+      </div>
+    </section>
+
+
+    <!-- 06: MY DU'A -->
+    <section class="screen dua-screen" data-screen="dua" hidden>
+      <div class="screen-inner dua-inner">
+
+        <div class="dua-flower">❀</div>
+
+        <p class="eyebrow">A PRAYER I CARRY FOR YOU</p>
+
+        <h1>My <em>du'a.</em></h1>
+
+        <div class="dua-paper">
+
+          <p>
+            May Allah ease your STPM examinations and bless every effort you’ve put into your studies.
+            May He grant you clarity of mind, strength to recall everything you’ve learned, and confidence in every
+            answer you write.
+            May Allah calm your heart whenever you feel overwhelmed, ease your worries, and reward all the sacrifices
+            and hard work
+            you’ve made throughout this journey. You’re almost at the finish line, and I pray that Allah makes these
+            final steps
+            easier for you and grants you results that bring happiness to your heart.
+          </p>
+
+          <p>
+            May Allah bless every aspect of your life.
+            May He grant you good health, protect your family, widen your rizq, and fill your future with endless
+            barakah.
+            May He surround you with sincere people who genuinely wish the best for you, guide you towards goodness,
+            and bring peace into your life. May Allah protect your heart from sadness, your mind from unnecessary
+            worries,
+            and your soul from anything that takes you further away from Him. May you always find reasons to smile,
+            strength to keep growing, and countless blessings in places you never expected.
+          </p>
+
+          <p>
+            And for both of us, may Allah guide our hearts and intentions towards what pleases Him.
+            If we are written for each other in this dunya and akhirah, may He bless our journey towards
+            halal and make our love a reason for us to become closer to Him. May Allah take care of our qalbi,
+            beautify our akhlaq, strengthen our iman, and keep us away from everything that is haram or harmful to us.
+            May we continue growing into better people, chasing our dreams while never forgetting our purpose as His
+            servants.
+            Whatever He has written for us, may He make it beautiful, meaningful, and filled with barakah. Allahumma
+            Barik
+          </p>
+
+          <p class="aamiin">
+            Aamiin ya Rabbal 'alamin.
+          </p>
+
+        </div>
+
+        <p class="dua-foot">
+          May goodness find you in every season.
+        </p>
+
+      </div>
+    </section>
+
+
+    <!-- 07: LAST BUT NOT LEAST -->
+    <section class="screen" data-screen="last" hidden>
+      <div class="screen-inner last-layout">
+
+        <div class="film-stack">
+          <div class="photo-frame last-photo-frame-1">
+            <img src="assets/Last.png" alt="A special memory" class="last-photo">
+            <p>the small things</p>
+          </div>
+
+          <div class="photo-frame last-photo-frame-2">
+            <img src="assets/Phone.png" alt="Another special memory" class="last-photo">
+            <p>felt like home</p>
+          </div>
+        </div>
+
+        <article class="letter-paper">
+          <p class="eyebrow">ONE MORE THING</p>
+
+          <h1>Last but<br><em>not least.</em></h1>
+
+          <p>
+            I hope this new chapter of your life brings you countless little reasons to smile.
+            More beautiful mornings, unexpected happiness, new experiences, wonderful memories,
+            and opportunities that take you closer to everything you’ve ever dreamed of.
+            I hope you get to explore the world, discover new things about yourself, laugh a little louder,
+            worry a little less, and enjoy every moment of being you.
+          </p>
+
+          <p>
+            There’s still so much waiting for you out there, and I hope
+            you never stop being excited about life. Keep chasing your dreams,
+            keep growing, keep learning, and never forget to celebrate how far you’ve come.
+            You deserve to experience the beautiful things life has to offer, not just
+            the big achievements, but also the little moments that make an ordinary day special.
+          </p>
+
+          <p>
+            So here’s to another year of you sayang. May it be kinder, brighter,
+            and filled with more happiness than you could ever imagine. And wherever
+            life takes us, I hope we never stop becoming better people along the way.
+          </p>
+
+          <p class="signature">
+            Sayang catcat saya ♡
+          </p>
+        </article>
+
+      </div>
+    </section>
+
+
+<!-- 08: THANK YOU -->
+    <section class="screen thankyou-screen" data-screen="thankyou" hidden>
+      <div class="screen-inner thankyou-inner">
+
+        <div class="thankyou-flower">✿</div>
+
+        <p class="eyebrow">THE END OF THIS LITTLE COLLECTION</p>
+
+        <h1>Thank you,<br><em>Gardenia.</em></h1>
+
+        <div class="photo-frame finale-frame">
+          <img src="assets/Thanks.png" alt="One last keepsake memory" class="finale-photo">
+          <p>one for the keepsake box</p>
+        </div>
+
+        <p class="lead">
+          Thank you for the memories, the laughs, and the
+          little pieces of life we've shared. I hope this
+          made your day feel a little more special. Again,
+          happy birthday my girl.
+        </p>
+
+        <p class="final-signoff">
+          Made with care, just for you.
+        </p>
+
+        <button class="outline-button" id="restart-button">
+          Read it all again ↺
+        </button>
+
+      </div>
+    </section>
+
+
+
+    <!-- GALLERY POPUP -->
+    <div class="lightbox" id="lightbox" hidden>
+      <button class="lightbox-close" id="lightbox-close" aria-label="Close photo viewer">×</button>
+
+      <img id="lightbox-image" src="" alt="Selected memory">
+
+      <div class="lightbox-flower">✿</div>
+      <p id="lightbox-caption">A little memory</p>
+      <p class="lightbox-help">a little moment, kept forever ♡</p>
+    </div>
+
+
+
+    <!-- PAGE NAVIGATION -->
+    <div class="page-controls" id="page-controls" hidden>
+
+      <button class="nav-button" id="back-button">
+        ← Back
+      </button>
+
+      <div class="progress-wrap">
+        <div class="progress-track">
+          <span id="progress-fill"></span>
+        </div>
+        <p id="progress-label">01 / 07</p>
+      </div>
+
+      <button class="nav-button next-button" id="next-button">
+        Next →
+      </button>
+
+    </div>
+
+</body>
+
+</html>
